@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+<script>
+    (function(){
+        if('123456'){
+            if (prompt('请输入文章密码') !== '123456'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon.ico?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="FS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Line84 Home" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="test">
+<meta name="keywords" content="FS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习 Mogilefs">
+<meta property="og:url" content="http://yoursite.com/2013/07/13/study-mogilsfs/index.html">
+<meta property="og:site_name" content="Line84 Home">
+<meta property="og:description" content="test">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-27T07:49:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习 Mogilefs">
+<meta name="twitter:description" content="test">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2013/07/13/study-mogilsfs/"/>
+
+
+
+
+
+  <title>学习 Mogilefs | Line84 Home</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Line84 Home</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">相濡以沫 相忘于江湖</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-相册">
+          <a href="/photo" rel="section">
+            
+            相册
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2013/07/13/study-mogilsfs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jzkangta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Line84 Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">学习 Mogilefs</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-07-13T20:46:25+08:00">
+                2013-07-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,851
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>test<br><a id="more"></a></p>
+<h2 id="先说说有哪些坑"><a href="#先说说有哪些坑" class="headerlink" title="先说说有哪些坑"></a>先说说有哪些坑</h2><ol>
+<li>安装<ul>
+<li>yum安装不了</li>
+<li>需要先安装CPAN相关环境：CPANMinus（方便后续安装一些依赖）</li>
+<li>依赖很多perl的库</li>
+<li>网上的安装教程不能信</li>
+</ul>
+</li>
+<li>centOS版本<ul>
+<li>没有人提及centos7会有问题，大部分资料都不是7下面去做的<ul>
+<li>在centos7下，最终部署完成后，存储的文件都只有一份，不管设置复制多少份，都只有一份</li>
+<li>解决方案：打一个补丁…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="MogileFS-服务器规划："><a href="#MogileFS-服务器规划：" class="headerlink" title="MogileFS 服务器规划："></a>MogileFS 服务器规划：</h2><ul>
+<li>数据库 (MySQL)：192.168.50.81           (储存MogileFS元数据)</li>
+<li>MogileFS(Tracker)：192.168.50.81</li>
+<li>MogileFS(Mogstore)：192.168.50.82</li>
+<li>MogileFS(Mogstore)：192.168.50.84</li>
+</ul>
+<h2 id="安装Mogilefs"><a href="#安装Mogilefs" class="headerlink" title="安装Mogilefs"></a>安装Mogilefs</h2><ol>
+<li>安装CPANMinus</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">sudo wget  http:<span class="string">//xrl.us/cpanm</span>  <span class="params">--no-check-certificate</span> -O <span class="string">/sbin/cpanm</span> </span><br><span class="line">sudo chmod +x  <span class="string">/sbin/cpanm</span></span><br><span class="line"></span><br><span class="line">sudo cpanm DBD:<span class="function">:mysql</span></span><br><span class="line"><span class="comment">#如果报错，可以执行这个替代：</span></span><br><span class="line">sudo yum install <span class="string">"perl(DBD::mysql)"</span></span><br><span class="line"></span><br><span class="line">sudo cpanm MogileFS:<span class="function">:Server</span></span><br><span class="line"><span class="comment">#如果出现以下错误：</span></span><br><span class="line">[wangjun@web-lanxun-73-bj ~]$ sudo cpanm MogileFS:<span class="function">:Server</span></span><br><span class="line">--&gt; Working on MogileFS:<span class="function">:Server</span></span><br><span class="line">Fetching http:<span class="string">//www.cpan.org/authors/id/D/DO/DORMANDO/MogileFS-Server-2.72.tar.gz</span> <span class="string">...</span> OK</span><br><span class="line">==&gt; Found dependencies: ExtUtils:<span class="function">:MakeMaker</span></span><br><span class="line">--&gt; Working on ExtUtils:<span class="function">:MakeMaker</span></span><br><span class="line">Fetching http:<span class="string">//www.cpan.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.24.tar.gz</span> <span class="string">...</span> OK</span><br><span class="line">Configuring ExtUtils-MakeMaker-7.24 <span class="string">...</span> OK</span><br><span class="line">Can't locate ExtUtils/Manifest.pm in @INC <span class="params">(@INC contains: FatPacked::<span class="attr">19127176</span>=HASH(0x123db88)</span> <span class="string">/usr/local/lib64/perl5</span> <span class="string">/usr/local/share/perl5</span> <span class="string">/usr/lib64/perl5/vendor_perl</span> <span class="string">/usr/share/perl5/vendor_perl</span> <span class="string">/usr/lib64/perl5</span> <span class="string">/usr/share/perl5</span> .) at <span class="string">/sbin/cpanm</span> line 132.</span><br><span class="line"><span class="comment">#执行</span></span><br><span class="line">sudo  yum install perl-ExtUtils-Embed -y</span><br><span class="line"></span><br><span class="line">sudo cpanm MogileFS:<span class="function">:Utils</span></span><br><span class="line">sudo cpanm MogileFS:<span class="function">:Client</span></span><br><span class="line">sudo cpanm IO:<span class="function">:AIO</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>至此，安装完毕，每台机都要安装</p>
+</blockquote>
+<ol>
+<li>在数据库中操作添加用户和权限的操作</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> MogileFS <span class="keyword">DEFAULT</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_bin;</span><br><span class="line"><span class="keyword">grant</span> all <span class="keyword">on</span> MogileFS.* <span class="keyword">to</span> <span class="string">'mogile'</span>@<span class="string">'%'</span> <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">'mogile'</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> mysql.user <span class="keyword">SET</span> <span class="keyword">Password</span>=<span class="keyword">PASSWORD</span>(<span class="string">'123456'</span>) <span class="keyword">WHERE</span> <span class="keyword">User</span>=<span class="string">'mogile'</span>;</span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>在数据库的那台机进行初始化数据</li>
+</ol>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">mogdbsetup --dbhost=192.168.50.81 --dbname=MogileFS --dbuser=mogile --dbpass=123456</span><br><span class="line"></span><br><span class="line"><span class="comment">#这时，数据库多了一个MogileFS库</span></span><br><span class="line">MariaDB [(none)]&gt; show databases;</span><br><span class="line">+-----------------------+</span><br><span class="line">|<span class="string"> Database              </span>|</span><br><span class="line">+-----------------------+</span><br><span class="line">|<span class="string"> MogileFS              </span>|</span><br><span class="line">|<span class="string"> wx_pay                </span>|</span><br><span class="line">|<span class="string"> zabbix_proxy          </span>|</span><br><span class="line">+-----------------------+</span><br><span class="line"><span class="comment">#这个库里都是初始化的表</span></span><br><span class="line">MariaDB [MogileFS]&gt; show tables;</span><br><span class="line">+----------------------+</span><br><span class="line">|<span class="string"> Tables_in_MogileFS   </span>|</span><br><span class="line">+----------------------+</span><br><span class="line">|<span class="string"> checksum             </span>|</span><br><span class="line">|<span class="string"> class                </span>|</span><br><span class="line">|<span class="string"> device               </span>|</span><br><span class="line">|<span class="string"> domain               </span>|</span><br><span class="line">|<span class="string"> file                 </span>|</span><br><span class="line">|<span class="string"> file_on              </span>|</span><br><span class="line">|<span class="string"> file_on_corrupt      </span>|</span><br><span class="line">|<span class="string"> file_to_delete       </span>|</span><br><span class="line">|<span class="string"> file_to_delete2      </span>|</span><br><span class="line">|<span class="string"> file_to_delete_later </span>|</span><br><span class="line">|<span class="string"> file_to_queue        </span>|</span><br><span class="line">|<span class="string"> file_to_replicate    </span>|</span><br><span class="line">|<span class="string"> fsck_log             </span>|</span><br><span class="line">|<span class="string"> host                 </span>|</span><br><span class="line">|<span class="string"> server_settings      </span>|</span><br><span class="line">|<span class="string"> tempfile             </span>|</span><br><span class="line">|<span class="string"> unreachable_fids     </span>|</span><br><span class="line">+----------------------+</span><br><span class="line">17 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure>
+<ol>
+<li>配置Tracker服务器（81）</li>
+</ol>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/mogilefs/</span><br><span class="line">sudo vim /etc/mogilefs/mogilefsd.conf </span><br><span class="line"></span><br><span class="line"><span class="comment"># Database connection information</span></span><br><span class="line">db_dsn = DBI:mysql:MogileFS:host=192.168.50.81</span><br><span class="line">db_user = mogile</span><br><span class="line">db_pass = 123456</span><br><span class="line"></span><br><span class="line"><span class="comment"># IP:PORT to listen on for MogileFS client requests</span></span><br><span class="line">listen = 127.0.0.1:7001</span><br><span class="line"></span><br><span class="line"><span class="comment"># Optional, if you don't define the port above.</span></span><br><span class="line">conf_port = 7001</span><br><span class="line"></span><br><span class="line"><span class="comment"># Number of query workers to start by default.</span></span><br><span class="line">query_jobs = 10</span><br><span class="line"></span><br><span class="line"><span class="comment"># Number of delete workers to start by default.</span></span><br><span class="line">delete_jobs = 1</span><br><span class="line"></span><br><span class="line"><span class="comment"># Number of replicate workers to start by default.</span></span><br><span class="line">replicate_jobs = 5</span><br><span class="line"></span><br><span class="line"><span class="comment"># Number of reaper workers to start by default.</span></span><br><span class="line"><span class="comment"># (you don't usually need to increase this)</span></span><br><span class="line">reaper_jobs = 1</span><br></pre></td></tr></table></figure>
+<ol>
+<li>启动和查看<blockquote>
+<p>不可以使用root启动，so 要创建一个专门的用户来操作</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">sudo adduser mogile</span><br><span class="line">sudo su - mogile</span><br><span class="line">mogilefsd -c /etc/mogilefs/mogilefsd.conf --daemon</span><br><span class="line"></span><br><span class="line">[mogile@web01 ~]$ ps -ef |grep mogilefsd</span><br><span class="line">mogile  <span class="number"> 52909 </span>   <span class="number"> 1 </span><span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd</span><br><span class="line">mogile  <span class="number"> 52910 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [monitor]</span><br><span class="line">mogile  <span class="number"> 52911 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [replicate]</span><br><span class="line">mogile  <span class="number"> 52912 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [replicate]</span><br><span class="line">mogile  <span class="number"> 52913 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [replicate]</span><br><span class="line">mogile  <span class="number"> 52914 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [replicate]</span><br><span class="line">mogile  <span class="number"> 52915 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [replicate]</span><br><span class="line">mogile  <span class="number"> 52916 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [delete]</span><br><span class="line">mogile  <span class="number"> 52917 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52918 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52919 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52920 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52921 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52922 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52923 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52924 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52925 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52926 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [queryworker]</span><br><span class="line">mogile  <span class="number"> 52927 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [reaper]</span><br><span class="line">mogile  <span class="number"> 52928 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [fsck]</span><br><span class="line">mogile  <span class="number"> 52929 </span>52909 <span class="number"> 0 </span>13:12 ?        00:00:00 mogilefsd [job_master]</span><br><span class="line">mogile  <span class="number"> 53005 </span>52866 <span class="number"> 0 </span>13:13 pts/0    00:00:00 grep --color=auto mogilefsd</span><br></pre></td></tr></table></figure>
+<ul>
+<li>停止服务</li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pkill mogilefsd</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>至此，MogileFS(Tracker)所有操作完毕</p>
+</blockquote>
+<h2 id="MogileFS，存储节点-Mogstore-配置"><a href="#MogileFS，存储节点-Mogstore-配置" class="headerlink" title="MogileFS，存储节点(Mogstore)配置"></a>MogileFS，存储节点(Mogstore)配置</h2><h3 id="82操作"><a href="#82操作" class="headerlink" title="82操作"></a>82操作</h3><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/mogilefs/</span><br><span class="line">sudo vim /etc/mogilefs/mogstored.conf</span><br><span class="line">maxconns = 10000</span><br><span class="line">httplisten = 0.0.0.0:7500</span><br><span class="line">mgmtlisten = 0.0.0.0:7501</span><br><span class="line">docroot=/home/mogdata</span><br><span class="line"></span><br><span class="line"><span class="comment">#创建/home/mogdata</span></span><br><span class="line">mkdir mogdata</span><br><span class="line"></span><br><span class="line">root启动</span><br><span class="line">sudo mogstored --daemon</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果要停止</span></span><br><span class="line">sudo pkill mogstored</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>84做同样操作</p>
+</blockquote>
+<h2 id="添加存储主机（节点）到trackers中"><a href="#添加存储主机（节点）到trackers中" class="headerlink" title="添加存储主机（节点）到trackers中"></a>添加存储主机（节点）到trackers中</h2><ul>
+<li>在81上执行</li>
+</ul>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[mogile@node1 ~]$  mogadm  <span class="attribute">--trackers</span>=127.0.0.1:7001  host <span class="builtin-name">add</span> node82 <span class="attribute">--ip</span>=192.168.50.82 <span class="attribute">--port</span>=7500 <span class="attribute">--status</span>=alive </span><br><span class="line">[mogile@node1 ~]$  mogadm  <span class="attribute">--trackers</span>=127.0.0.1:7001  host <span class="builtin-name">add</span> node84 <span class="attribute">--ip</span>=192.168.50.84 <span class="attribute">--port</span>=7500 <span class="attribute">--status</span>=alive </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有存储节点服务器</span></span><br><span class="line">[mogile@node1 ~]$ mogadm  host list </span><br><span class="line">node82 [1]: alive</span><br><span class="line">  IP:       192.168.50.82:7500</span><br><span class="line"></span><br><span class="line">node84 [2]: alive</span><br><span class="line">  IP:       192.168.50.84:7500</span><br></pre></td></tr></table></figure>
+<h2 id="管理存储设备"><a href="#管理存储设备" class="headerlink" title="管理存储设备"></a>管理存储设备</h2><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">#添加device到node节点机（81</span>操作）</span><br><span class="line">[mogile@<span class="symbol">node1</span> ~]$ mogadm  device add <span class="symbol">node82</span> dev<span class="number">1</span></span><br><span class="line">[mogile@<span class="symbol">node1</span> ~]$ mogadm  device add <span class="symbol">node84</span> dev<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="attr">#查看所有device信息</span></span><br><span class="line"><span class="attr">[mogile@node1</span> ~]$ mogadm  device list</span><br><span class="line"><span class="symbol">node82</span> [<span class="number">1</span>]: alive</span><br><span class="line">                    used<span class="comment">(G)</span>    free<span class="comment">(G)</span>   total<span class="comment">(G)</span>  weight<span class="comment">(%)</span></span><br><span class="line">   dev<span class="number">1</span>:   alive    <span class="number">201.267</span>    <span class="number">697.118</span>    <span class="number">898.385</span>        <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">node84</span> [<span class="number">2</span>]: alive</span><br><span class="line">                    used<span class="comment">(G)</span>    free<span class="comment">(G)</span>   total<span class="comment">(G)</span>  weight<span class="comment">(%)</span></span><br><span class="line">   dev<span class="number">2</span>:   alive    <span class="number">294.157</span>    <span class="number">105.104</span>    <span class="number">399.262</span>        <span class="number">100</span></span><br></pre></td></tr></table></figure>
+<h2 id="MogileFS-中域-类的管理"><a href="#MogileFS-中域-类的管理" class="headerlink" title="MogileFS 中域,类的管理"></a>MogileFS 中域,类的管理</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加"域"，domain1</span></span><br><span class="line">[mogile@node1 ~]$ mogadm domain <span class="builtin-name">add</span> domain1</span><br><span class="line"></span><br><span class="line">[mogile@node1 ~]$ mogadm domain list</span><br><span class="line"> domain               class                mindevcount   replpolicy   hashtype</span><br><span class="line">-------------------- -------------------- ------------- ------------ -------</span><br><span class="line"> domain1             <span class="built_in"> default </span>                  2        MultipleHosts() NONE   </span><br><span class="line"> </span><br><span class="line"> # 在<span class="string">"域"</span>中建<span class="string">"类"</span>,并加入最小保存份数（mindevcount）</span><br><span class="line"> mogadm  class <span class="builtin-name">add</span> domain1 class1 <span class="attribute">--mindevcount</span>=2</span><br><span class="line"> </span><br><span class="line"> # 再检查一下域</span><br><span class="line">[mogile@node1 ~]$ mogadm domain list</span><br><span class="line"> domain               class                mindevcount   replpolicy   hashtype</span><br><span class="line">-------------------- -------------------- ------------- ------------ -------</span><br><span class="line"> domain1             <span class="built_in"> default </span>                  2        MultipleHosts() NONE   </span><br><span class="line"></span><br><span class="line">[mogile@node1 ~]$ mogadm class list </span><br><span class="line"> domain               class                mindevcount   replpolicy   hashtype</span><br><span class="line">-------------------- -------------------- ------------- ------------ -------</span><br><span class="line"> domain1             <span class="built_in"> default </span>                  2        MultipleHosts() NONE   </span><br><span class="line"></span><br><span class="line"><span class="comment">#检查整个MogileFS系统</span></span><br><span class="line">[mogile@node1 ~]$ mogadm check</span><br><span class="line">Checking trackers<span class="built_in">..</span>.</span><br><span class="line">  127.0.0.1:7001 <span class="built_in">..</span>. OK</span><br><span class="line"></span><br><span class="line">Checking hosts<span class="built_in">..</span>.</span><br><span class="line">  [ 1] node82 <span class="built_in">..</span>. OK</span><br><span class="line">  [ 2] node84 <span class="built_in">..</span>. OK</span><br><span class="line"></span><br><span class="line">Checking devices<span class="built_in">..</span>.</span><br><span class="line">  host device         size(G)    used(G)    free(G)   use%   ob state   I/O%</span><br><span class="line">  ---- ------------ ---------- ---------- ---------- ------ ---------- -----</span><br><span class="line">  [ 1] dev1           898.385    201.267    697.119  22.40%  writeable   N/A</span><br><span class="line">  [ 2] dev2           399.262    294.218    105.044  73.69%  writeable   N/A</span><br><span class="line">  ---- ------------ ---------- ---------- ---------- ------</span><br><span class="line">             total:  1297.647    495.484    802.163  38.18%</span><br></pre></td></tr></table></figure>
+<h2 id="使用mogtool操作文件"><a href="#使用mogtool操作文件" class="headerlink" title="使用mogtool操作文件"></a>使用mogtool操作文件</h2><ul>
+<li>添加文件：</li>
+</ul>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#81执行</span></span><br><span class="line">mogupload <span class="params">--trackers=127</span>.0.0.1  <span class="params">--domain=domain1</span> <span class="params">--key=xkyf_key</span> <span class="params">--file=xkyf</span>.gif </span><br><span class="line"></span><br><span class="line"><span class="comment">#在82看一下</span></span><br><span class="line">[root@node2 home]<span class="comment"># tree mogdata/</span></span><br><span class="line">mogdata/</span><br><span class="line">└── dev1</span><br><span class="line">    ├── 0</span><br><span class="line">    │   └── 000</span><br><span class="line">    │       └── 000</span><br><span class="line">    │           ├── 0000000002.fid</span><br><span class="line">    │           ├── 0000000003.fid</span><br><span class="line">    │           ├── 0000000004.fid</span><br><span class="line">    │           └── 0000000005.fid</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 取出文件</span></span><br><span class="line">[resin@node1 ~]$ mogfileinfo <span class="params">--trackers=127</span>.0.0.1 <span class="params">--domain=domain1</span> <span class="params">--key=xkyf_key</span></span><br><span class="line">- file: xkyf_key</span><br><span class="line">     class:              default</span><br><span class="line">  devcount:                    1</span><br><span class="line">    domain:              domain1</span><br><span class="line">       fid:                    5</span><br><span class="line">       key:             xkyf_key</span><br><span class="line">    length:              2774270</span><br><span class="line"> - http:<span class="string">//192.168.50.82</span><span class="function">:7500</span>/dev1/0/000/000/0000000005.fid</span><br></pre></td></tr></table></figure>
+<ul>
+<li>上面mogfileinfo 执行后发现devcount：1和返回的http://地址为一个，默认其实应该是2，百思不得其解后发现是centos7需要打一个补丁，操作如下：</li>
+</ul>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="variable">@node1</span> ~]<span class="comment"># yum install cpan</span></span><br><span class="line">[root<span class="variable">@node1</span> ~]<span class="comment"># cpan</span></span><br><span class="line"></span><br><span class="line">cpan[<span class="number">1</span>]&gt; o conf urllist push <span class="symbol">http:</span>/<span class="regexp">/backpan.perl.org/</span></span><br><span class="line">Please <span class="keyword">use</span> <span class="string">'o conf commit'</span> to make the config permanent!</span><br><span class="line">cpan[<span class="number">2</span>]&gt; install BRADFITZ/Sys-Syscall-<span class="number">0</span>.<span class="number">23</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<ul>
+<li>完成后重启Tracker服务</li>
+</ul>
+<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[resin@node1 ~]$ mogupload --trackers=<span class="number">127.0</span><span class="meta">.0</span><span class="meta">.1</span>  --domain=images --class=jpg --key=<span class="number">346H</span>.jpg --file=<span class="number">346H</span>.jpg </span><br><span class="line">[resin@node1 ~]$ mogfileinfo --trackers=<span class="number">127.0</span><span class="meta">.0</span><span class="meta">.1</span> --domain=images --key=<span class="number">346H</span>.jpg </span><br><span class="line">- file: <span class="number">346H</span>.jpg</span><br><span class="line"><span class="symbol">     class:</span>                  jpg</span><br><span class="line"><span class="symbol">  devcount:</span>                    <span class="number">3</span></span><br><span class="line"><span class="symbol">    domain:</span>               images</span><br><span class="line"><span class="symbol">       fid:</span>                   <span class="number">16</span></span><br><span class="line"><span class="symbol">       key:</span>             <span class="number">346H</span>.jpg</span><br><span class="line"><span class="symbol">    length:</span>              <span class="number">8750218</span></span><br><span class="line"> - http://<span class="number">127.0</span><span class="meta">.0</span><span class="meta">.1</span>:<span class="number">7500</span>/dev3/<span class="number">0</span>/<span class="number">000</span>/<span class="number">000</span>/<span class="number">0000000016.</span>fid</span><br><span class="line"> - http://<span class="number">192.168</span><span class="meta">.50</span><span class="meta">.84</span>:<span class="number">7500</span>/dev2/<span class="number">0</span>/<span class="number">000</span>/<span class="number">000</span>/<span class="number">0000000016.</span>fid</span><br><span class="line"> - http://<span class="number">192.168</span><span class="meta">.50</span><span class="meta">.82</span>:<span class="number">7500</span>/dev1/<span class="number">0</span>/<span class="number">000</span>/<span class="number">000</span>/<span class="number">0000000016.</span>fid</span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以看到，打了补丁后，执行存储命令后，该文件复制了三份，并且存在了三台机器</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/FS/" rel="tag"># FS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/27/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">jzkangta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#先说说有哪些坑"><span class="nav-number">1.</span> <span class="nav-text">先说说有哪些坑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MogileFS-服务器规划："><span class="nav-number">2.</span> <span class="nav-text">MogileFS 服务器规划：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Mogilefs"><span class="nav-number">3.</span> <span class="nav-text">安装Mogilefs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MogileFS，存储节点-Mogstore-配置"><span class="nav-number">4.</span> <span class="nav-text">MogileFS，存储节点(Mogstore)配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#82操作"><span class="nav-number">4.1.</span> <span class="nav-text">82操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加存储主机（节点）到trackers中"><span class="nav-number">5.</span> <span class="nav-text">添加存储主机（节点）到trackers中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理存储设备"><span class="nav-number">6.</span> <span class="nav-text">管理存储设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MogileFS-中域-类的管理"><span class="nav-number">7.</span> <span class="nav-text">MogileFS 中域,类的管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用mogtool操作文件"><span class="nav-number">8.</span> <span class="nav-text">使用mogtool操作文件</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jzkangta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
